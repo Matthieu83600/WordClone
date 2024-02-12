@@ -39,15 +39,17 @@ Partial Class Form1
         Left = New ToolStripButton()
         Center = New ToolStripButton()
         Right = New ToolStripButton()
+        Big = New ToolStripButton()
         ToolStripSeparator2 = New ToolStripSeparator()
         AideToolStripButton = New ToolStripButton()
         RichTextBox1 = New RichTextBox()
+        Small = New ToolStripButton()
         ToolStrip1.SuspendLayout()
         SuspendLayout()
         ' 
         ' ToolStrip1
         ' 
-        ToolStrip1.Items.AddRange(New ToolStripItem() {NouvelleToolStripButton, OuvrirToolStripButton, EnregistrerToolStripButton, ImprimerToolStripButton, toolStripSeparator, CouperToolStripButton, CopierToolStripButton, CollerToolStripButton, toolStripSeparator1, Bold, Italic, Underline, Left, Center, Right, ToolStripSeparator2, AideToolStripButton})
+        ToolStrip1.Items.AddRange(New ToolStripItem() {NouvelleToolStripButton, OuvrirToolStripButton, EnregistrerToolStripButton, ImprimerToolStripButton, toolStripSeparator, CouperToolStripButton, CopierToolStripButton, CollerToolStripButton, toolStripSeparator1, Bold, Italic, Underline, Left, Center, Right, Big, Small, ToolStripSeparator2, AideToolStripButton})
         ToolStrip1.Location = New Point(0, 0)
         ToolStrip1.Name = "ToolStrip1"
         ToolStrip1.Size = New Size(985, 25)
@@ -181,6 +183,15 @@ Partial Class Form1
         Right.Size = New Size(23, 22)
         Right.Text = "Texte à droite"
         ' 
+        ' Big
+        ' 
+        Big.DisplayStyle = ToolStripItemDisplayStyle.Image
+        Big.Image = CType(resources.GetObject("Big.Image"), Image)
+        Big.ImageTransparentColor = Color.Magenta
+        Big.Name = "Big"
+        Big.Size = New Size(23, 22)
+        Big.Text = "Big"
+        ' 
         ' ToolStripSeparator2
         ' 
         ToolStripSeparator2.Name = "ToolStripSeparator2"
@@ -203,6 +214,15 @@ Partial Class Form1
         RichTextBox1.Size = New Size(985, 610)
         RichTextBox1.TabIndex = 1
         RichTextBox1.Text = ""
+        ' 
+        ' Small
+        ' 
+        Small.DisplayStyle = ToolStripItemDisplayStyle.Image
+        Small.Image = CType(resources.GetObject("Small.Image"), Image)
+        Small.ImageTransparentColor = Color.Magenta
+        Small.Name = "Small"
+        Small.Size = New Size(23, 22)
+        Small.Text = "Small"
         ' 
         ' Form1
         ' 
@@ -239,5 +259,7 @@ Partial Class Form1
     Friend WithEvents Right As ToolStripButton
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Big As ToolStripButton
+    Friend WithEvents Small As ToolStripButton
 
 End Class
