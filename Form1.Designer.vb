@@ -30,7 +30,7 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(949, 617)
         Name = "Form1"
-        Text = "Form1"
+        Text = "Word Clone VB"
         ResumeLayout(False)
     End Sub
 
